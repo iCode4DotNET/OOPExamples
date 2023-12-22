@@ -1,14 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 using SadrTools.Extension;
-namespace Models.Personel
+namespace Models.Personel_Adv
 {
     /// <summary>
     /// کلاسی برای موجودیت اشخاص
     /// </summary>
     public class Person
     {
-
         #region [ Ctor ] 
 
 
@@ -25,7 +24,8 @@ namespace Models.Personel
         /// </summary>
         public Person()
         {
-            ID = int.MinValue;
+            ID = SadrTools.Utility.NumericHelper.GetRandom();
+
             BirthDate = DateTime.Now;
             FirstName = "DEFAULT_NAME";
             LastName = "DEFAULT_FAMILY";
@@ -38,22 +38,10 @@ namespace Models.Personel
 
         }
 
-        public Person(int id) : this()
+       
+        public Person(string firstName) : this()
         {
-            ID = id;
-        }
-
-        public Person(int id, string firstName) : this()
-        {
-            ID = id;
             FirstName = firstName;
-        }
-
-        public Person(int id, string firstName, string lastName) : this()
-        {
-            ID = id;
-            FirstName = firstName;
-            LastName = lastName;
         }
 
         public Person(string firstName, string lastName) : this()
@@ -62,17 +50,15 @@ namespace Models.Personel
             LastName = lastName;
         }
 
-        public Person(int id, string firstName, string lastName, DateTime birthDate) : this()
+        public Person(string firstName, string lastName, DateTime birthDate) : this()
         {
-            ID = id;
             BirthDate = birthDate;
             FirstName = firstName;
             LastName = lastName;
         }
 
-        public Person(int id, string firstName, string lastName, DateTime birthDate, string ssn) : this()
+        public Person(string firstName, string lastName, DateTime birthDate, string ssn) : this()
         {
-            ID = id;
             BirthDate = birthDate;
             FirstName = firstName;
             LastName = lastName;
@@ -91,7 +77,16 @@ namespace Models.Personel
 
         #region [ Property ]
 
-        public int ID { get; set; }
+        //public int ID
+        //{
+        //    get
+        //    {
+        //        return SadrTools.Utility.NumericHelper.GetRandom();
+        //    }
+        //}
+
+
+        public int ID { get;}
 
 
         /// <summary>
@@ -134,10 +129,7 @@ namespace Models.Personel
             get { return _ssn; }
             set
             {
-                //_ssn = _ssn.Length == 10 ? value : "0000000000";
-
                 _ssn = value.Length == 10 ? value : throw new System.Exception("کد ملی باید حتما 10 رقمی باشد");
-
             }
         }
 

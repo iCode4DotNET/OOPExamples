@@ -1,4 +1,6 @@
-﻿namespace SadrTools.Utility
+﻿using System;
+
+namespace SadrTools.Utility
 {
     public static class NumericHelper
     {
@@ -46,7 +48,21 @@
 
             // تمرین : متد های دلخواه به روش بازگشتی 
 
-            
+
+        }
+
+        public static int GetRandom()
+        {
+            System.Threading.Thread.Sleep(10);
+            return new Random().Next();
+        }
+        public static int GetRandom(int max)
+        {
+            return new Random().Next(max + 1);
+        }
+        public static int GetRandom(int min, int max)
+        {
+            return new Random().Next(min, max);
         }
     }
 }
