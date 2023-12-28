@@ -10,11 +10,6 @@ namespace SampleData
         {
             return new List<Customer>
             {
-                //new Customer { FullName = "Customer1"},
-                //new Customer { FullName = "Customer2"},
-                //new Customer { FullName = "Customer3"},
-                //new Customer { FullName = "Customer4"},
-
                 new Customer("Normal Customer1"),
                 new Customer("Normal Customer2"),
                 new Customer("Normal Customer3"),
@@ -70,6 +65,82 @@ namespace SampleData
                            {
                                 ProductObject = GetProducts()[1],
                                  Qty = 2
+                           }
+                       }
+                },
+
+                 new Order
+                {
+                     CustomerObject = GetCustomers()[3],
+                      OrderDate = DateTime.Now,
+                       OrderDetails = new List<OrderDetail>
+                       {
+                           new OrderDetail
+                           {
+                                ProductObject = GetProducts()[3],
+                                 Qty = 100
+                           },
+                           new OrderDetail
+                           {
+                                ProductObject = GetProducts()[2],
+                                 Qty = 100
+                           }
+                       }
+                },
+
+                 new Order
+                {
+                     CustomerObject = GetCustomers()[4],
+                      OrderDate = DateTime.Now,
+                       OrderDetails = new List<OrderDetail>
+                       {
+                           new OrderDetail
+                           {
+                                ProductObject = GetProducts()[3],
+                                 Qty = 100
+                           },
+                           new OrderDetail
+                           {
+                                ProductObject = GetProducts()[2],
+                                 Qty = 100
+                           }
+                       }
+                },
+
+                 new Order
+                {
+                     CustomerObject = GetCustomers()[5],
+                      OrderDate = DateTime.Now,
+                       OrderDetails = new List<OrderDetail>
+                       {
+                           new OrderDetail
+                           {
+                                ProductObject = GetProducts()[3],
+                                 Qty = 100
+                           },
+                           new OrderDetail
+                           {
+                                ProductObject = GetProducts()[2],
+                                 Qty = 100
+                           }
+                       }
+                },
+
+                 new Order
+                {
+                     CustomerObject = GetCustomers()[6],
+                      OrderDate = DateTime.Now,
+                       OrderDetails = new List<OrderDetail>
+                       {
+                           new OrderDetail
+                           {
+                                ProductObject = GetProducts()[3],
+                                 Qty = 100
+                           },
+                           new OrderDetail
+                           {
+                                ProductObject = GetProducts()[2],
+                                 Qty = 100
                            }
                        }
                 },

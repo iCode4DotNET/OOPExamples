@@ -32,6 +32,7 @@
             this.BtnShow = new System.Windows.Forms.Button();
             this.BtnDisplayOrders = new System.Windows.Forms.Button();
             this.successButton1 = new EndPoint_Part05.CustomControl.SuccessButton();
+            this.BtnPersonDTO = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.Grid)).BeginInit();
             this.SuspendLayout();
             // 
@@ -48,13 +49,13 @@
             this.Grid.ReadOnly = true;
             this.Grid.RowHeadersWidth = 51;
             this.Grid.RowTemplate.Height = 24;
-            this.Grid.Size = new System.Drawing.Size(872, 483);
+            this.Grid.Size = new System.Drawing.Size(1339, 483);
             this.Grid.TabIndex = 0;
             // 
             // BtnShow
             // 
             this.BtnShow.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.BtnShow.Location = new System.Drawing.Point(653, 23);
+            this.BtnShow.Location = new System.Drawing.Point(1120, 23);
             this.BtnShow.Name = "BtnShow";
             this.BtnShow.Size = new System.Drawing.Size(230, 94);
             this.BtnShow.TabIndex = 1;
@@ -65,7 +66,7 @@
             // BtnDisplayOrders
             // 
             this.BtnDisplayOrders.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.BtnDisplayOrders.Location = new System.Drawing.Point(385, 23);
+            this.BtnDisplayOrders.Location = new System.Drawing.Point(852, 23);
             this.BtnDisplayOrders.Name = "BtnDisplayOrders";
             this.BtnDisplayOrders.Size = new System.Drawing.Size(230, 94);
             this.BtnDisplayOrders.TabIndex = 2;
@@ -79,17 +80,29 @@
             this.successButton1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.successButton1.Location = new System.Drawing.Point(60, 23);
             this.successButton1.Name = "successButton1";
-            this.successButton1.Size = new System.Drawing.Size(203, 78);
+            this.successButton1.Size = new System.Drawing.Size(285, 78);
             this.successButton1.TabIndex = 3;
             this.successButton1.Text = "successButton1";
             this.successButton1.UseVisualStyleBackColor = false;
-            this.successButton1.Click += new System.EventHandler(this.successButton1_Click);
+            this.successButton1.Click += new System.EventHandler(this.SuccessButton1_Click);
+            // 
+            // BtnPersonDTO
+            // 
+            this.BtnPersonDTO.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.BtnPersonDTO.Location = new System.Drawing.Point(595, 23);
+            this.BtnPersonDTO.Name = "BtnPersonDTO";
+            this.BtnPersonDTO.Size = new System.Drawing.Size(230, 94);
+            this.BtnPersonDTO.TabIndex = 4;
+            this.BtnPersonDTO.Text = "نمایش اطلاعات خاص اشخاص";
+            this.BtnPersonDTO.UseVisualStyleBackColor = true;
+            this.BtnPersonDTO.Click += new System.EventHandler(this.BtnPersonDTO_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(893, 630);
+            this.ClientSize = new System.Drawing.Size(1360, 630);
+            this.Controls.Add(this.BtnPersonDTO);
             this.Controls.Add(this.successButton1);
             this.Controls.Add(this.BtnDisplayOrders);
             this.Controls.Add(this.BtnShow);
@@ -110,6 +123,7 @@
         private System.Windows.Forms.Button BtnShow;
         private System.Windows.Forms.Button BtnDisplayOrders;
         private CustomControl.SuccessButton successButton1;
+        private System.Windows.Forms.Button BtnPersonDTO;
     }
 }
 

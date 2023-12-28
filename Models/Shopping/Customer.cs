@@ -22,7 +22,17 @@ namespace Models.Shopping
 
         public override string ToString()
         {
-            return $"{ID} {FullName}";
+            /*
+            var type = this is VIPCustomer ? "VIP" : 
+                       this is ForeignCustomer ? "Foreign" : 
+                       "Normal";
+            */
+
+            var type = this is ForeignCustomer ? "Foreign" :
+                       this is VIPCustomer ? "VIP" :
+                       "Normal";
+
+            return $"{type} {ID} {FullName}";
         }
     }
         

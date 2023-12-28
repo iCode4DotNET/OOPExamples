@@ -75,3 +75,26 @@
 		-- از کلاس های استاتیک نمیتوان آبجکت ساخت
 
 		-- 
+
+
+		-- Encapsulation
+		-- Inheritance
+		-- Abstraction
+		-- Polymorphism
+
+
+		-- اشکال هندسی
+		-- به ازای هر شکلی محیط و مساحت آن را حساب کنید 
+		-- 10 تا شکل
+		-- 4 تا برنامه نویس
+
+		-- oop => Dev1 :  create class Circle     ==> add Method CalcArea , CalcPrimeter
+		--     => Dev2 :  create class Rectangle  ==> add Method Mohit , Masahat
+		--     => Dev3 :  create class Cube       ==> add Method MyCalMohit , MyCalcMasahat
+
+
+		--     => Senior Dev :  Base (Parent): create class Shape      ==> add Method CalculateArea , CalculatePrimeter
+
+
+
+		

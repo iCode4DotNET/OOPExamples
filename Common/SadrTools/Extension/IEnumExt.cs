@@ -15,5 +15,18 @@ namespace SadrTools.Extension
 
             return result.RemoveLastCharacter();
         }
+
+        public static string PrintMe<T>(this IEnumerable<T> items) where T : class
+        {
+            var result = string.Empty;
+
+            foreach (var item in items)
+            {
+                result += $"{item}";
+            }
+
+            return result;
+        }
+
     }
 }

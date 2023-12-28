@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{B2373062-B6FD-46B5-9C8F-2994E0FEA369}</ProjectGuid>
-    <OutputType>WinExe</OutputType>
-    <RootNamespace>EndPoint_Part05</RootNamespace>
-    <AssemblyName>EndPoint_Part05</AssemblyName>
+    <ProjectGuid>{50DE9FFE-606D-47E6-BE0B-BBD5C11D5E5F}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>EndPoint_Part6_AdvancedOOP</RootNamespace>
+    <AssemblyName>EndPoint_Part6_AdvancedOOP</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -39,65 +39,21 @@
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
-    <Reference Include="System.Deployment" />
-    <Reference Include="System.Drawing" />
     <Reference Include="System.Net.Http" />
-    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CustomControl\SuccessButton.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Form1.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Properties\Resources.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
-    <None Include="Properties\Settings.settings">
-      <Generator>SettingsSingleFileGenerator</Generator>
-      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
-    </None>
-    <Compile Include="Properties\Settings.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Settings.settings</DependentUpon>
-      <DesignTimeSharedInput>True</DesignTimeSharedInput>
-    </Compile>
+    <Compile Include="Test.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Common\SadrTools\SadrTools.csproj">
-      <Project>{8b01cd32-7e0c-4595-8cb1-744d4fac9e9f}</Project>
-      <Name>SadrTools</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Models\Models.csproj">
       <Project>{e04b4bdc-a8f4-4175-84a2-9ceb24dabeab}</Project>
       <Name>Models</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\SampleData\SampleData.csproj">
-      <Project>{47be965e-78eb-4403-92a8-fb7ac21602e9}</Project>
-      <Name>SampleData</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\ViewModels\ViewModels.csproj">
-      <Project>{267A338A-4103-4DAE-B708-B169DEDD5276}</Project>
-      <Name>ViewModels</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

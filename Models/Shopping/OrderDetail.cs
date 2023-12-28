@@ -1,5 +1,8 @@
 ﻿namespace Models.Shopping
 {
+    /// <summary>
+    /// InvoiceItem اقلام فاکتور
+    /// </summary>
     public class OrderDetail
     {
         public OrderDetail()
@@ -32,5 +35,4 @@
         }
 
     }
-
 }
